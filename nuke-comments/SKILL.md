@@ -16,7 +16,7 @@ Four keepers, and nothing else:
   _"This Checkbox spreads external props over its own click handler, so an `onClick` here would replace the toggle rather than compose with it."_
 - **Contract**: an invariant, a unit, or an order that the code does not show.
   _"`riskCells` stays row-major; the heatmap rebuilds its axes from that order."_
-  A contract set by a recorded decision may end with a citation of it, for example `(ADR 0014)`, when that record changes only when the decision does.
+  A contract that comes from an ADR may end by citing it, for example `(ADR 0014)`: an ADR changes only when its decision does, so the citation stays true.
   _"Mermaid's image shape fetches its URL as soon as the diagram draws, so such a diagram is an error: a Reply never reaches the network on its own (ADR 0014)."_
   The comment still states the rule, and the citation says where its reason lives and where to change it.
   Cite at the code that enforces the decision, and leave the places that only touch it bare.
