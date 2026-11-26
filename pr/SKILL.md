@@ -34,11 +34,6 @@ A PR body has two halves. The first half is read by everyone. The second half is
 
 <diagram, diff-sketch, or tree>
 
-## Evidence
-
-- **Before:** <output/failing test run>
-  **After:** <output/passing test run>
-
 ## Merge Danger
 
 **Door:** <one-way or two-way>
@@ -70,7 +65,7 @@ Numbered steps the reader follows to see the change, or to reproduce the bug it 
 - The last step says what the reader should see. For a bug fix, it says what used to happen and what happens now.
 - When nothing shows on screen, the steps are commands and the output to expect.
 
-Leave the section out when the reader has nothing to do: a refactor, or a change only tests can show. Evidence covers those.
+Leave the section out when the reader has nothing to do: a refactor, or a change only tests can show. CI covers those.
 
 ### Screenshots
 
@@ -149,13 +144,11 @@ sequenceDiagram
 
 - Show the whole block when most of it is new, when omitted context would hide ownership or order, or when the user needs a copyable target shape.
 
+For a bug fix, show the test that pins it, in pseudocode: what it checks, and that it fails without the fix.
+
 Place each visual next to the short text it supports. Keep only the calls, files, props, states, and boundaries needed to make the point. You may use one of these, you may use several, it is unlikely you will use all of them.
 
 Tangents go here too, each under its own short sub-heading: a commit that was superseded, a pre-existing failure this PR also repairs, work deliberately left for another PR.
-
-## Evidence
-
-Concrete evidence from running the code: test results, console output. Show a before and after: the exact test that fails before and passes after, using pseudocode. Screenshots live under Try it, so Evidence leaves them out.
 
 ## Merge Danger
 
